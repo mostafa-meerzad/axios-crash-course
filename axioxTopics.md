@@ -4,7 +4,7 @@ Axios is a powerful and popular JS library used to make HTTP requests
 
 ## making a GET request
 
-axios by default makes a git request 
+axios by default makes a git request
 
 ```js
 axios("https://jsonplaceholder.typicode.com/posts")
@@ -39,7 +39,7 @@ axios
 ```js
 axios
   .get("https://jsonplaceholder.typicode.com/posts", {
-    params: { _limit:5},
+    params: { _limit: 5 },
   })
   .then((res) => {
     console.log(res);
@@ -56,4 +56,39 @@ axios
     console.log(res);
   })
   .catch((err) => console.log(err));
+```
+
+## making a POST request
+
+posting data using axios
+
+```js
+axios
+  .post("https://jsonplaceholder.typicode.com/posts", {
+    title: "new title",
+    body: "new body",
+  })
+  .then((res) => {
+    console.log(res);
+    showOutput(res);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+```
+
+```js
+axios
+  .post("https://jsonplaceholder.typicode.com/posts", {
+    key: value,
+    key: value,
+    key: value,
+  })
+  .then((res) => {
+    console.log(res);
+    showOutput(res);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 ```

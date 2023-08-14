@@ -92,3 +92,52 @@ axios
     console.log(err);
   });
 ```
+
+## Patch/ PUT request
+
+````js
+axios
+    .put("https://jsonplaceholder.typicode.com/posts/1", {
+      // data as key-value pares
+      key:value,
+      key:value
+    })
+    .then((res) => {
+      console.log(res);
+      showOutput(res);
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+````
+
+patch for updating parts of an entry in database
+
+````js
+axios
+    .patch("https://jsonplaceholder.typicode.com/posts/1", {
+      // data as key-value pares
+      key:value,
+      key:value
+    })
+    .then((res) => {
+      console.log(res);
+      showOutput(res);
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+````
+## DELETE request
+
+````js
+axios
+    .delete("https://jsonplaceholder.typicode.com/posts/1")
+    .then((res) => {
+      console.log(res);
+      showOutput(res);
+    })
+    .catch((err) => {
+      console.log(err);
+    })
+````
